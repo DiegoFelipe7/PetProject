@@ -2,7 +2,7 @@ package co.sofka.com.biblioteca.entities;
 
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
-import co.com.sofka.domain.generic.Identity;
+import co.sofka.com.biblioteca.events.BibliotecaCreada;
 import co.sofka.com.biblioteca.events.BibliotecarioAgregado;
 import co.sofka.com.biblioteca.events.NombreDeBibliotecarioActualizado;
 import co.sofka.com.biblioteca.events.SeccionAgregada;
@@ -12,7 +12,7 @@ import co.sofka.com.valuesgeneric.Nombre;
 import java.util.List;
 import java.util.Objects;
 
-public class Biblioteca extends AggregateEvent {
+public class Biblioteca extends AggregateEvent<BibliotecaId> {
     protected Bibliotecario bibliotecario;
     protected Seccion seccion;
 
@@ -20,11 +20,11 @@ public class Biblioteca extends AggregateEvent {
         super(bibliotecaId);
     }
 
-//    public static Biblioteca from(BibliotecaId bibliotecaId, List<DomainEvent> events){
-//        var biblioteca = new Biblioteca(bibliotecaId);
-//        events.forEach(biblioteca::applyEvent);
-//        return biblioteca;
-//    }
+    public static Biblioteca from(BibliotecaId bibliotecaId, List<DomainEvent> events){
+        var biblioteca = new Biblioteca(bibliotecaId);
+        events.forEach(biblioteca::applyEvent);
+        return biblioteca;
+    }
 
     public void agregarBibliotecario(BibliotecarioId entityId, Nombre nombre) {
         Objects.requireNonNull(entityId);

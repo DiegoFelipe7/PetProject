@@ -17,7 +17,7 @@ public class Ubicacion implements ValueObject<String> {
 
     @Override
     public String value() {
-        return null;
+        return value;
     }
 
     @Override
