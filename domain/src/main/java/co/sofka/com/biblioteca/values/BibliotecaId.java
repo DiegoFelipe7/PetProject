@@ -8,7 +8,7 @@ public class BibliotecaId extends Identity {
 
     }
 
-    private BibliotecaId(String uuid){
+    public BibliotecaId(String uuid){
         super(uuid);
     }
 
