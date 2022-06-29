@@ -30,6 +30,7 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+
     <dependency>
     <groupId>co.com.sofka</groupId>
     <artifactId>domain</artifactId>
