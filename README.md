@@ -25,7 +25,8 @@ Proyecto grupal realizado con:
 
 3. En el módulo **domain** encontrará las entidades, eventos de dominio, comandos y objetos de valor para cada agregado raíz
 
-4. En el módulo **business** encontrará los casos de uso
+
+4. En el módulo **business** encontrará los casos de uso y los test para los agregados
 ### Link Modelo de dominio
 + https://drive.google.com/file/d/1Qv9WrriZnOAB8GYE3J94X5yVChocyTK_/view?usp=sharing
 

@@ -37,7 +37,6 @@ public class CrearBibliotecaUseCaseTest {
         //arrange
         BibliotecaId bibliotecaId = new BibliotecaId("hola");
         BibliotecarioId bibliotecarioId = new BibliotecarioId("hol");
-        Biblioteca biblioteca = new Biblioteca(bibliotecaId, bibliotecarioId);
         var command = new CrearBiblioteca(bibliotecaId, bibliotecarioId);
 
 
