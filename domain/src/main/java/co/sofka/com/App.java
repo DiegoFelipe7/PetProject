@@ -8,7 +8,7 @@ public class App {
     public static void main(String[] args) {
 
 
-     System.out.println("es" + LocalDate.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy")));
+     System.out.println("es" + LocalDate.now());
 
     }
 }
