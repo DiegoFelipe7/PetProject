@@ -1,6 +1,4 @@
 
-q
-Adomain/src/main/java/co/sofka/com/prestamo/values/PrestamoId.java,f/2/f27a3c8beabfd40a79e2ffe65348c51aa450667f
 b
 2domain/src/main/java/co/sofka/com/libro/Libro.java,c/f/cf5ed623d3c14f0fe9787492557d6dbc76f0d563
 u
