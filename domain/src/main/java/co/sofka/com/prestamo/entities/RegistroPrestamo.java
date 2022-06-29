@@ -16,6 +16,10 @@ public class RegistroPrestamo extends Entity<RegistroPrestamoId> {
         this.estadoPrestamo  = estadoPrestamo.cambiarEstado(estadoNuevo);
     }
 
+    public EstadoPrestamo estado(){
+        return this.estadoPrestamo;
+    }
+
 
 
 }
