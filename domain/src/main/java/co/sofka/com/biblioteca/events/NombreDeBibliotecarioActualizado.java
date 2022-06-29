@@ -8,7 +8,7 @@ public class NombreDeBibliotecarioActualizado extends DomainEvent {
     private final Nombre nombre;
 
     public NombreDeBibliotecarioActualizado(Nombre nombre){
-        super("sofka.biblioteca.nombredebibliotecarioactualizado");
+        super("co.sofka.com.biblioteca.nombredebibliotecarioactualizado");
         this.nombre = nombre;
     }
 
