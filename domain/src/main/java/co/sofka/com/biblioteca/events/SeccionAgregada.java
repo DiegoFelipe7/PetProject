@@ -13,7 +13,7 @@ public class SeccionAgregada extends DomainEvent {
     private final Codigo codigo;
 
     public SeccionAgregada(SeccionId seccionId, Ubicacion ubicacion, Codigo codigo){
-        super("sofka.biblioteca.seccionagregada");
+        super("co.sofka.com.biblioteca.seccionagregada");
         this.seccionId = seccionId;
         this.ubicacion = ubicacion;
         this.codigo = codigo;
