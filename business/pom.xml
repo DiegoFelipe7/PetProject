@@ -33,15 +33,6 @@
             <artifactId>business</artifactId>
             <version>1.5.0</version>
         </dependency>
-<<<<<<< HEAD
-=======
-        <dependency>
-            <groupId>co.sofka.com</groupId>
-            <artifactId>domain</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
->>>>>>> ricardo_ortega
     </dependencies>
 
     <build>
@@ -93,13 +84,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-<<<<<<< HEAD
-                    <source>8</source>
-                    <target>8</target>
-=======
                     <source>10</source>
                     <target>10</target>
->>>>>>> ricardo_ortega
                 </configuration>
             </plugin>
         </plugins>
