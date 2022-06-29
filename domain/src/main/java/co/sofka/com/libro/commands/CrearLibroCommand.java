@@ -6,19 +6,19 @@ import co.sofka.com.libro.values.IdLibro;
 import co.sofka.com.libro.values.Titulo;
 
 public class CrearLibroCommand extends Command {
-    private final IdLibro entityId ;
+    private final IdLibro idLibro ;
     private final Titulo titulo;
     private final Fecha fecha;
 
 
-    public CrearLibroCommand(IdLibro entityId, Titulo titulo, Fecha fecha) {
-        this.entityId = entityId;
+    public CrearLibroCommand(IdLibro idLibro, Titulo titulo, Fecha fecha) {
+        this.idLibro = idLibro;
         this.titulo = titulo;
         this.fecha = fecha;
     }
 
-    public IdLibro entityId() {
-        return entityId;
+    public IdLibro idLibro() {
+        return idLibro;
     }
 
     public Titulo titulo() {

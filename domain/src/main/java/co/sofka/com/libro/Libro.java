@@ -25,7 +25,7 @@ public class Libro extends AggregateEvent<IdLibro> {
         super(entityId);
         appendChange(new LibroCreado(titulo,fecha)).apply();
     }
-    private Libro(IdLibro idLibro){
+    public Libro(IdLibro idLibro){
         super(idLibro);
         subscribe(new LibroChangue(this));
     }
