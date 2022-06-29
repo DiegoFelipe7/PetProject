@@ -13,11 +13,11 @@ public class AutorAgregado extends DomainEvent {
         this.nombre=nombre;
     }
 
-    public IdAutor getIdautor(){
+    public IdAutor idautor(){
         return entityId;
     }
 
-    public Nombre getNombre(){
+    public Nombre nombre(){
         return nombre;
     }
 }

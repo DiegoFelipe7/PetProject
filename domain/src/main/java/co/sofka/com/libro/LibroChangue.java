@@ -18,14 +18,14 @@ public class LibroChangue extends EventChange {
             libro.categoria=new HashSet<>();
         });
 
-
         apply((AutorAgregado event)->{
-            libro.autor.add(new Autor(event.getIdautor(),event.getNombre()));
+            libro.autor.add(new Autor(event.idautor(),event.nombre()));
         });
 
         apply((CategoriaAgregada event)->{
             libro.categoria.add(new Categoria(event.getIdCategoria(),event.getCategoria()));
         });
+
 
 
 
