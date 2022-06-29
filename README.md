@@ -33,10 +33,11 @@ Proyecto grupal realizado con:
 +
 
 ### Análisis
-![image]()
+![Pet_Project-Analisis drawio](https://user-images.githubusercontent.com/83563182/176559506-ac8ae2aa-d7a9-47f5-bc16-aa54f40f7d92.png)
 
 ### Modelamiento
-![image]()
+![Pet_Project-Modelo de dominio drawio](https://user-images.githubusercontent.com/83563182/176559532-c638ead9-dc8f-428e-b536-c70752fa8fe4.png)
+
 
 ### Eventos de dominio
-![image]()
+![Pet_Project-Eventos de dominio drawio](https://user-images.githubusercontent.com/83563182/176559541-a445c3c4-b0e3-4f8a-b3c1-d460ce917c15.png)
