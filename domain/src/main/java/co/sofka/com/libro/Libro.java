@@ -13,7 +13,14 @@ import co.sofka.com.valuesgeneric.Nombre;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
-
+/**
+ * Agregado  raiz  Libro
+ *
+ * @author Diego Felipe Muñoz <diegofelipem99@gmail.com>
+ * @version 1.0.0 2022-06-29
+ * @since 1.0.0
+ * *
+ */
 public class Libro extends AggregateEvent<IdLibro> {
     protected Titulo titulo;
     protected Fecha fecha;

@@ -3,7 +3,13 @@ package co.sofka.com.libro.values;
 import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
-
+/**
+ * Objeto de valor tipo String para titulo de un libro
+ *
+ * @author Diego Felipe Muñoz <diegofelipem99@gmail.com>
+ * @version 1.0.0 2022-06-29
+ * @since 1.0.0
+ */
 public class Titulo implements ValueObject<String> {
     private final String value;
 

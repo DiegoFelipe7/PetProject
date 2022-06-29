@@ -8,7 +8,14 @@ import co.sofka.com.libro.events.CategoriaAgregada;
 import co.sofka.com.libro.events.LibroCreado;
 
 import java.util.HashSet;
-
+/**
+ * EvenChangue  Libro para el manejo de enventos
+ *
+ * @Version 1.0
+ * @Author Diego Felipe Muñoz Mosquera
+ * @Email diegofelipem99@gmail.com
+ * *
+ */
 public class LibroChangue extends EventChange {
     public LibroChangue(Libro libro){
         apply((LibroCreado event)->{
