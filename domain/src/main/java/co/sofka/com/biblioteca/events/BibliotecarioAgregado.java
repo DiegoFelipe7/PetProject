@@ -9,10 +9,16 @@ public class BibliotecarioAgregado extends DomainEvent {
     private final Nombre nombre;
 
     public BibliotecarioAgregado(BibliotecarioId bibliotecarioId, Nombre nombre) {
-        super("sofka.biblioteca.bibliotecarioagregado");
+        super("co.sofka.com.biblioteca.bibliotecarioagregado");
         this.bibliotecarioId = bibliotecarioId;
         this.nombre = nombre;
     }
 
+    public BibliotecarioId bibliotecarioId() {
+        return bibliotecarioId;
+    }
 
+    public Nombre nombre() {
+        return nombre;
+    }
 }
