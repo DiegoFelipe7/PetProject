@@ -2,18 +2,19 @@ package co.sofka.com.biblioteca.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
 import co.sofka.com.biblioteca.entities.Bibliotecario;
+import co.sofka.com.biblioteca.values.BibliotecarioId;
 import co.sofka.com.valuesgeneric.Nombre;
 
 public class BibliotecaCreada extends DomainEvent {
 
-    private final Bibliotecario bibliotecario;
+    private final BibliotecarioId bibliotecarioId;
 
-    public BibliotecaCreada(Bibliotecario bibliotecario){
-        super("sofka.biblioteca.bibliotecacreada");
-        this.bibliotecario = bibliotecario;
+    public BibliotecaCreada(BibliotecarioId bibliotecarioId){
+        super("co.sofka.com.biblioteca.bibliotecacreada");
+        this.bibliotecarioId = bibliotecarioId;
     }
 
-    public Bibliotecario bibliotecario(){
-        return bibliotecario;
+    public BibliotecarioId bibliotecarioId(){
+        return bibliotecarioId;
     }
 }
