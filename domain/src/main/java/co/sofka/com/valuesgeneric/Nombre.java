@@ -4,13 +4,20 @@ import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
 
+/**
+ * Objeto de valor para Nombre
+ *
+ * @author Ricardo Ortega <tattortega.28@gmail.com>
+ * @version 1.0.0 2022-06-29
+ * @since 1.0.0
+ */
 public class Nombre implements ValueObject<String> {
 
     private final String value;
 
     public Nombre(String value) {
         this.value = Objects.requireNonNull(value);
-        if (this.value.isEmpty()){
+        if (this.value.isEmpty()) {
             throw new IllegalArgumentException("El nombre no puede estar vacio");
         }
     }

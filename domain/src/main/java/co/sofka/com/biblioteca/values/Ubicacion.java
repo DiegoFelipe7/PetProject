@@ -4,13 +4,20 @@ import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
 
+/**
+ * Objeto de valor para Ubicacion
+ *
+ * @author Ricardo Ortega <tattortega.28@gmail.com>
+ * @version 1.0.0 2022-06-29
+ * @since 1.0.0
+ */
 public class Ubicacion implements ValueObject<String> {
 
     private final String value;
 
-    public Ubicacion(String value){
+    public Ubicacion(String value) {
         this.value = Objects.requireNonNull(value);
-        if (this.value.isEmpty()){
+        if (this.value.isEmpty()) {
             throw new IllegalArgumentException("La ubicacion de la seccion no puede estar vacia");
         }
     }
