@@ -6,6 +6,13 @@ import co.sofka.com.biblioteca.values.BibliotecaId;
 import co.sofka.com.biblioteca.values.SeccionId;
 import co.sofka.com.biblioteca.values.Ubicacion;
 
+/**
+ * Comando para agregar Seccion a la Biblioteca
+ *
+ * @author Ricardo Ortega <tattortega.28@gmail.com>
+ * @version 1.0.0 2022-06-29
+ * @since 1.0.0
+ */
 public class AgregarSeccion extends Command {
 
     private final BibliotecaId bibliotecaId;
@@ -13,7 +20,7 @@ public class AgregarSeccion extends Command {
     private final Ubicacion ubicacion;
     private final Seccion seccion;
 
-    public AgregarSeccion(BibliotecaId bibliotecaId, SeccionId seccionId, Ubicacion ubicacion, Seccion seccion){
+    public AgregarSeccion(BibliotecaId bibliotecaId, SeccionId seccionId, Ubicacion ubicacion, Seccion seccion) {
         this.bibliotecaId = bibliotecaId;
         this.seccionId = seccionId;
         this.ubicacion = ubicacion;

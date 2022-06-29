@@ -8,12 +8,23 @@ import co.sofka.com.biblioteca.events.BibliotecaCreada;
 import co.sofka.com.biblioteca.events.BibliotecarioAgregado;
 import co.sofka.com.biblioteca.events.NombreDeBibliotecarioActualizado;
 import co.sofka.com.biblioteca.events.SeccionAgregada;
-import co.sofka.com.biblioteca.values.*;
+import co.sofka.com.biblioteca.values.BibliotecaId;
+import co.sofka.com.biblioteca.values.BibliotecarioId;
+import co.sofka.com.biblioteca.values.Codigo;
+import co.sofka.com.biblioteca.values.SeccionId;
+import co.sofka.com.biblioteca.values.Ubicacion;
 import co.sofka.com.valuesgeneric.Nombre;
 
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * Agregado raiz para Biblioteca
+ *
+ * @author Ricardo Ortega <tattortega.28@gmail.com>
+ * @version 1.0.0 2022-06-29
+ * @since 1.0.0
+ */
 public class Biblioteca extends AggregateEvent<BibliotecaId> {
 
     protected BibliotecarioId bibliotecarioId;
@@ -25,13 +36,13 @@ public class Biblioteca extends AggregateEvent<BibliotecaId> {
         subscribe(new BibliotecaEventChange(this));
     }
 
-    public Biblioteca(BibliotecaId bibliotecaId, BibliotecarioId bibliotecarioId){
+    public Biblioteca(BibliotecaId bibliotecaId, BibliotecarioId bibliotecarioId) {
         super(bibliotecaId);
         appendChange(new BibliotecaCreada(bibliotecarioId)).apply();
         subscribe(new BibliotecaEventChange(this));
     }
 
-    public static Biblioteca from(BibliotecaId bibliotecaId, List<DomainEvent> events){
+    public static Biblioteca from(BibliotecaId bibliotecaId, List<DomainEvent> events) {
         var biblioteca = new Biblioteca(bibliotecaId);
         events.forEach(biblioteca::applyEvent);
         return biblioteca;
@@ -54,7 +65,7 @@ public class Biblioteca extends AggregateEvent<BibliotecaId> {
         appendChange(new SeccionAgregada(seccionId, ubicacion, codigo)).apply();
     }
 
-    public void agregarBiblioteca(BibliotecarioId bibliotecarioId){
+    public void agregarBiblioteca(BibliotecarioId bibliotecarioId) {
         Objects.requireNonNull(bibliotecarioId);
         appendChange(new BibliotecaCreada(bibliotecarioId));
     }
