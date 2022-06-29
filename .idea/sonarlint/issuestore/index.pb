@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 j
@@ -55,3 +56,11 @@ Gdomain/src/main/java/co/sofka/com/libro/commands/CrearLibroCommand.java,2\c\2c
 0business/src/test/java/co/sofka/com/AppTest.java,c\6\c6808f31e302d50b808ac54fc3a08a5ef11c9639
 u
 Ebusiness/src/test/java/co/sofka/com/libros/CrearLibroUseCaseTest.java,9\8\98aacd74b07c87fa7abcefa7ac3c283bb5691d9d
+=======
+q
+Adomain/src/main/java/co/sofka/com/prestamo/values/PrestamoId.java,f/2/f27a3c8beabfd40a79e2ffe65348c51aa450667f
+b
+2domain/src/main/java/co/sofka/com/libro/Libro.java,c/f/cf5ed623d3c14f0fe9787492557d6dbc76f0d563
+u
+Edomain/src/main/java/co/sofka/com/biblioteca/entities/Biblioteca.java,a/e/ae6b7ef12ae8cce78f0c8b7ff1367581d7712035
+>>>>>>> juan-prestamo
