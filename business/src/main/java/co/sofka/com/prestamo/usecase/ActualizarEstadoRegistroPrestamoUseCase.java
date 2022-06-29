@@ -5,7 +5,11 @@ import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.business.support.ResponseEvents;
 import co.sofka.com.prestamo.Prestamo;
 import co.sofka.com.prestamo.commands.ActualizarEstadoDelRegistroPrestamoCommand;
-
+/**
+ * @author  Juan Ignacio Ramallo
+ * @version 1.0.0
+ * Driven domain design -  Caso de uso para actualizar el estado en un prestamo.
+ */
 public class ActualizarEstadoRegistroPrestamoUseCase extends UseCase<RequestCommand<ActualizarEstadoDelRegistroPrestamoCommand>, ResponseEvents> {
     @Override
     public void executeUseCase(RequestCommand<ActualizarEstadoDelRegistroPrestamoCommand> actualizarEstadoDelRegistroPrestamoCommandRequestCommand) {
