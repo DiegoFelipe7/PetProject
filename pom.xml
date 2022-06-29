@@ -19,8 +19,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.source>18</maven.compiler.source>
+    <maven.compiler.target>18</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -30,11 +30,14 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+
     <dependency>
     <groupId>co.com.sofka</groupId>
     <artifactId>domain</artifactId>
     <version>1.5.0</version>
-  </dependency>
+    </dependency>
+
+
   </dependencies>
 
   <build>
