@@ -2,7 +2,6 @@ package co.sofka.com.prestamo;
 
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
-import co.sofka.com.biblioteca.entities.Biblioteca;
 import co.sofka.com.biblioteca.values.BibliotecaId;
 import co.sofka.com.prestamo.values.*;
 import co.sofka.com.libro.values.IdLibro;
@@ -11,7 +10,6 @@ import co.sofka.com.prestamo.entities.RegistroPrestamo;
 import co.sofka.com.prestamo.events.*;
 
 import java.util.List;
-import java.util.Objects;
 
 public class Prestamo extends AggregateEvent<PrestamoId>{
     protected IdLibro libroId;
