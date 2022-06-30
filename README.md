@@ -38,5 +38,9 @@ Proyecto grupal realizado con:
 ![Pet_Project-Analisis drawio](https://user-images.githubusercontent.com/83563182/176559506-ac8ae2aa-d7a9-47f5-bc16-aa54f40f7d92.png)
 
 ### Modelamiento
-![Pet_Project-Modelo de dominio drawio](https://user-images.githubusercontent.com/83563182/176559532-c638ead9-dc8f-428e-b536-c70752fa8fe4.png)
+![Pet_Project-Modelo de dominio drawio](https://user-images.githubusercontent.com/83563182/176570718-4e1f333b-8109-4cc0-ae23-d35ddc35428c.png)
+
+### Eventos de dominio
+![Pet_Project-Eventos de dominio drawio](https://user-images.githubusercontent.com/83563182/176570749-a3aa749d-d57d-4aed-b271-2f4790c1ebb8.png)
+
 
