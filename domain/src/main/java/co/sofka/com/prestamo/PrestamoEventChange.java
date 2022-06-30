@@ -6,11 +6,11 @@ import co.sofka.com.prestamo.events.*;
 
 
 public class PrestamoEventChange extends EventChange {
-    private final static String MSG = "El prestamo no ha sido creado";
+    private static final String MSG = "El prestamo no ha sido creado";
     public PrestamoEventChange(Prestamo prestamo) {
-        apply((NuevoPrestamoCreado event)->{
-            prestamo.fecha= event.getFecha();
-        });
+        apply((NuevoPrestamoCreado event)->
+            prestamo.fecha= event.getFecha()
+        );
         apply((ClienteAsociadoAprestamo event) -> {
             if(!prestamo.identity().equals(event.getPrestamoId())){
                 throw new IllegalArgumentException(MSG);}
@@ -35,7 +35,7 @@ public class PrestamoEventChange extends EventChange {
 
         apply((CambioDeEstadoEnRegistro event)->{
             if(!prestamo.identity().equals(event.getPrestamoId())){
-                throw new IllegalArgumentException("hola");
+                throw new IllegalArgumentException(MSG);
 
             }
             prestamo.registroPrestamo.actualizarEstadoDelPrestamo(event.getEstadoPrestamo().value());

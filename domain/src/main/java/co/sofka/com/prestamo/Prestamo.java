@@ -2,7 +2,7 @@ package co.sofka.com.prestamo;
 
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
-import co.sofka.com.biblioteca.entities.Biblioteca;
+
 import co.sofka.com.biblioteca.values.BibliotecaId;
 import co.sofka.com.prestamo.values.*;
 import co.sofka.com.libro.values.IdLibro;
@@ -11,9 +11,16 @@ import co.sofka.com.prestamo.entities.RegistroPrestamo;
 import co.sofka.com.prestamo.events.*;
 
 import java.util.List;
-import java.util.Objects;
 
+
+
+/**
+ * @author  Juan Ignacio Ramallo
+ * @version 1.0.0
+ * Driven domain design -  Agregado root con sus atributos, y comportamientos.
+ */
 public class Prestamo extends AggregateEvent<PrestamoId>{
+
     protected IdLibro libroId;
     protected BibliotecaId bibliotecaId;
     protected Cliente cliente;
@@ -32,6 +39,8 @@ public class Prestamo extends AggregateEvent<PrestamoId>{
         super(prestamoId);
         subscribe(new PrestamoEventChange(this));
     }
+
+
     public static Prestamo from(PrestamoId prestamoId, List<DomainEvent> events){
         var prestamo = new Prestamo(prestamoId);
         events.forEach(prestamo::applyEvent);
