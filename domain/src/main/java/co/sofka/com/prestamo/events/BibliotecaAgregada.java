@@ -4,6 +4,11 @@ import co.com.sofka.domain.generic.DomainEvent;
 import co.sofka.com.biblioteca.values.BibliotecaId;
 import co.sofka.com.prestamo.values.PrestamoId;
 
+/**
+ * @author  Juan Ignacio Ramallo
+ * @version 1.0.0
+ * Driven domain design -  Evento de dominio agregado de  biblioteca al prestamo.
+ */
 public class BibliotecaAgregada extends DomainEvent {
     private final PrestamoId prestamoId;
     private final BibliotecaId id;

@@ -4,6 +4,11 @@ import co.com.sofka.domain.generic.DomainEvent;
 import co.sofka.com.prestamo.entities.Cliente;
 import co.sofka.com.prestamo.values.PrestamoId;
 
+/**
+ * @author  Juan Ignacio Ramallo
+ * @version 1.0.0
+ * Driven domain design -  Evento de dominio cliente asociado al prestamo.
+ */
 public class ClienteAsociadoAprestamo extends DomainEvent {
     private final PrestamoId prestamoId;
     private final Cliente cliente;
