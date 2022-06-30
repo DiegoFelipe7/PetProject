@@ -18,7 +18,7 @@ public class Categoria extends Entity<IdCategoria> {
         this.categoria=categoria;
     }
 
-    public void agregarCategoria(CategoriaLibro categoria){
+    public void agregarCategoriaCliente(CategoriaLibro categoria){
         this.categoria=categoria;
     }
 }
