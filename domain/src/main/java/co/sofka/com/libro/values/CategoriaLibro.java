@@ -3,6 +3,7 @@ package co.sofka.com.libro.values;
 import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
+
 /**
  * Objeto de valor tipo String para categoria de un libro
  *
@@ -24,5 +25,18 @@ public class CategoriaLibro implements ValueObject<String> {
     @Override
     public String value() {
         return categoria;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CategoriaLibro that = (CategoriaLibro) o;
+        return Objects.equals(categoria, that.categoria);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(categoria);
     }
 }

@@ -4,13 +4,14 @@ import co.com.sofka.domain.generic.Command;
 import co.sofka.com.prestamo.values.EstadoPrestamo;
 import co.sofka.com.prestamo.values.PrestamoId;
 import co.sofka.com.prestamo.values.RegistroPrestamoId;
+
 /**
- * @author  Juan Ignacio Ramallo
+ * @author Juan Ignacio Ramallo
  * @version 1.0.0
  * Driven domain design -  commando para actualizar el estado de un prestamo.
  */
 public class ActualizarEstadoDelRegistroPrestamoCommand extends Command {
-   private final  PrestamoId prestamoId;
+    private final PrestamoId prestamoId;
     private final RegistroPrestamoId registroPrestamoId;
     private final EstadoPrestamo estadoPrestamo;
 

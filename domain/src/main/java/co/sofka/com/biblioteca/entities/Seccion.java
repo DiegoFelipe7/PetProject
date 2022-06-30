@@ -14,13 +14,17 @@ import co.sofka.com.biblioteca.values.Ubicacion;
  */
 public class Seccion extends Entity<SeccionId> {
 
-    private final Ubicacion ubicacion;
-    private final Codigo codigo;
+    private Ubicacion ubicacion;
+    private Codigo codigo;
 
     public Seccion(SeccionId seccionId, Ubicacion ubicacion, Codigo codigo) {
         super(seccionId);
         this.ubicacion = ubicacion;
         this.codigo = codigo;
+    }
+
+    public void crearUbicacion(Ubicacion ubicacion) {
+        this.ubicacion = ubicacion;
     }
 
     public Ubicacion ubicacion() {

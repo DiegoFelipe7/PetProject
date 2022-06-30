@@ -11,7 +11,7 @@ public class PrestamoId extends Identity {
     public PrestamoId() {
     }
 
-    public static PrestamoId of(String uuid){
+    public static PrestamoId of(String uuid) {
         return new PrestamoId(uuid);
     }
 }

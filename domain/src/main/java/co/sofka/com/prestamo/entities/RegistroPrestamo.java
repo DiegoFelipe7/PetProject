@@ -5,7 +5,7 @@ import co.sofka.com.prestamo.values.EstadoPrestamo;
 import co.sofka.com.prestamo.values.RegistroPrestamoId;
 
 /**
- * @author  Juan Ignacio Ramallo
+ * @author Juan Ignacio Ramallo
  * @version 1.0.0
  * Driven domain design -  Entidad con sus atributos y comportamientos
  */
@@ -17,14 +17,13 @@ public class RegistroPrestamo extends Entity<RegistroPrestamoId> {
         this.estadoPrestamo = estadoPrestamo;
     }
 
-    public void actualizarEstadoDelPrestamo(String estadoNuevo){
-        this.estadoPrestamo  = estadoPrestamo.cambiarEstado(estadoNuevo);
+    public void actualizarEstadoDelPrestamo(String estadoNuevo) {
+        this.estadoPrestamo = estadoPrestamo.cambiarEstado(estadoNuevo);
     }
 
-    public EstadoPrestamo estado(){
+    public EstadoPrestamo estado() {
         return this.estadoPrestamo;
     }
-
 
 
 }

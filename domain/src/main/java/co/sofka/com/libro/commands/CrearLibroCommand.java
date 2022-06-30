@@ -8,13 +8,13 @@ import co.sofka.com.libro.values.Titulo;
 /**
  * Comando  CrearLibroCommand
  *
- * @Author Diego Felipe Muñoz Mosquera
  * @version 1.0.0 2022-06-29
+ * @Author Diego Felipe Muñoz Mosquera
  * @since 1.0.0
  * *
  */
 public class CrearLibroCommand extends Command {
-    private final IdLibro idLibro ;
+    private final IdLibro idLibro;
     private final Titulo titulo;
     private final Fecha fecha;
 

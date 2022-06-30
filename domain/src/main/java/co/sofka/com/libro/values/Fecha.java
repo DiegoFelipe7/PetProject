@@ -4,6 +4,7 @@ import co.com.sofka.domain.generic.ValueObject;
 
 import java.time.LocalDate;
 import java.util.Objects;
+
 /**
  * Objeto de valor tipo LocalDate para fecha de un libro
  *

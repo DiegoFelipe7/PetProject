@@ -6,7 +6,7 @@ import co.sofka.com.prestamo.values.Edad;
 import co.sofka.com.valuesgeneric.Nombre;
 
 /**
- * @author  Juan Ignacio Ramallo
+ * @author Juan Ignacio Ramallo
  * @version 1.0.0
  * Driven domain design -  Entidad con sus atributos y comportamientos
  */
@@ -18,18 +18,17 @@ public class Cliente extends Entity<ClienteId> {
         super(id);
         this.nombre = nombre;
         this.edad = edad;
-
-
     }
 
-    public Edad edad(){
+    public Edad edad() {
         return this.edad;
     }
 
-    public Nombre nombre(){
+    public Nombre nombre() {
         return this.nombre;
     }
-    public void actualizarNombre(Nombre nombre){
+
+    public void actualizarNombre(Nombre nombre) {
         this.nombre = nombre;
     }
 

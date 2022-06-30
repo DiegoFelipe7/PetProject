@@ -3,6 +3,7 @@ package co.sofka.com.libro.events;
 import co.com.sofka.domain.generic.DomainEvent;
 import co.sofka.com.libro.values.CategoriaLibro;
 import co.sofka.com.libro.values.IdCategoria;
+
 /**
  * DomainEvent  CategoriaAgregada
  *
@@ -15,17 +16,17 @@ public class CategoriaAgregada extends DomainEvent {
     private final IdCategoria idCategoria;
     private final CategoriaLibro categoria;
 
-    public CategoriaAgregada(IdCategoria idCategoria, CategoriaLibro categoria){
+    public CategoriaAgregada(IdCategoria idCategoria, CategoriaLibro categoria) {
         super("co.sofka.com.libro.CategoriaAgregada");
         this.idCategoria = idCategoria;
         this.categoria = categoria;
     }
 
-    public IdCategoria getIdCategoria(){
+    public IdCategoria getIdCategoria() {
         return idCategoria;
     }
 
-    public CategoriaLibro getCategoria(){
+    public CategoriaLibro getCategoria() {
         return categoria;
     }
 }

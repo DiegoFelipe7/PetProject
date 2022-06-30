@@ -4,8 +4,9 @@ import co.com.sofka.domain.generic.DomainEvent;
 import co.sofka.com.prestamo.values.EstadoPrestamo;
 import co.sofka.com.prestamo.values.PrestamoId;
 import co.sofka.com.prestamo.values.RegistroPrestamoId;
+
 /**
- * @author  Juan Ignacio Ramallo
+ * @author Juan Ignacio Ramallo
  * @version 1.0.0
  * Driven domain design -  Evento de dominio cambio el estado de un prestamo.
  */

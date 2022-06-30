@@ -13,6 +13,7 @@ import co.sofka.com.valuesgeneric.Nombre;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
+
 /**
  * Agregado  raiz  Libro
  *
@@ -23,51 +24,54 @@ import java.util.Set;
  */
 public class Libro extends AggregateEvent<IdLibro> {
     protected Titulo titulo;
+
     protected Fecha fecha;
-    protected Set<Autor>  autor;
+    protected Set<Autor> autor;
     protected Set<Categoria> categoria;
 
 
-    public Libro(IdLibro entityId , Titulo titulo,Fecha fecha) {
+    public Libro(IdLibro entityId, Titulo titulo, Fecha fecha) {
         super(entityId);
-        appendChange(new LibroCreado(titulo,fecha)).apply();
-    }
-    public Libro(IdLibro idLibro){
-        super(idLibro);
-        subscribe(new LibroChangue(this));
+        appendChange(new LibroCreado(titulo, fecha)).apply();
     }
 
-    public static Libro libro(IdLibro idLibro , List<DomainEvent> events){
+    public Libro(IdLibro idLibro) {
+        super(idLibro);
+        subscribe(new LibroEventChange(this));
+    }
+
+    public static Libro libro(IdLibro idLibro, List<DomainEvent> events) {
         var libro = new Libro(idLibro);
         events.forEach(libro::applyEvent);
         return libro;
     }
 
-    public void agregarAutor(IdAutor entityId , Nombre nombre){
+    public void agregarAutor(IdAutor entityId, Nombre nombre) {
         Objects.requireNonNull(entityId);
         Objects.requireNonNull(nombre);
-        appendChange(new AutorAgregado(entityId,nombre));
+        appendChange(new AutorAgregado(entityId, nombre));
     }
 
-    public void agregarCategoria(IdCategoria entityId , CategoriaLibro categoria){
+    public void agregarCategoria(IdCategoria entityId, CategoriaLibro categoria) {
         Objects.requireNonNull(entityId);
         Objects.requireNonNull(categoria);
-        appendChange(new CategoriaAgregada(entityId,categoria));
+        appendChange(new CategoriaAgregada(entityId, categoria));
     }
 
 
-    public Titulo titulo(){
+    public Titulo titulo() {
         return titulo;
     }
-    public Fecha fecha(){
+
+    public Fecha fecha() {
         return fecha;
     }
 
-    public Set<Autor> autor(){
+    public Set<Autor> autor() {
         return autor;
     }
 
-    public Set<Categoria> categoria(){
+    public Set<Categoria> categoria() {
         return categoria;
     }
 

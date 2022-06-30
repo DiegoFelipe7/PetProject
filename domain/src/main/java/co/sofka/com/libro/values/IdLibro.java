@@ -1,6 +1,7 @@
 package co.sofka.com.libro.values;
 
 import co.com.sofka.domain.generic.Identity;
+
 /**
  * Objeto de valor tipo Identity para libro
  *
@@ -10,10 +11,11 @@ import co.com.sofka.domain.generic.Identity;
  */
 public class IdLibro extends Identity {
 
-    public IdLibro(){
+    public IdLibro() {
 
     }
-    public IdLibro(String uuid){
+
+    public IdLibro(String uuid) {
         super(uuid);
     }
 

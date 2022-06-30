@@ -3,6 +3,7 @@ package co.sofka.com.libro.values;
 import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
+
 /**
  * Objeto de valor tipo String para titulo de un libro
  *
@@ -15,7 +16,7 @@ public class Titulo implements ValueObject<String> {
 
     public Titulo(String titulo) {
         this.value = Objects.requireNonNull(titulo);
-        if(this.value.equals("")){
+        if (this.value.equals("")) {
             throw new IllegalArgumentException("No se permiten vacios");
         }
     }
