@@ -31,7 +31,8 @@ Proyecto grupal realizado con:
 + https://drive.google.com/file/d/1Qv9WrriZnOAB8GYE3J94X5yVChocyTK_/view?usp=sharing
 
 ### Link Video de sustentación
-+
++ https://youtu.be/q0pwiC_GinM
+
 
 ### Análisis
 ![Pet_Project-Analisis drawio](https://user-images.githubusercontent.com/83563182/176559506-ac8ae2aa-d7a9-47f5-bc16-aa54f40f7d92.png)
